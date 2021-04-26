@@ -1,0 +1,3 @@
+[submodule "ubuntu-server-netboot"]
+	path = ubuntu-server-netboot
+	url = https://github.com/dannf/ubuntu-server-netboot.git
