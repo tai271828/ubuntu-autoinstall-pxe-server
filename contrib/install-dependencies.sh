@@ -1,5 +1,6 @@
 #!/bin/bash
 apt update
+apt install pxelinux -y
 apt install genisoimage mtools python3-distro-info -y
 
 # if you want this tool to setup pxe server for you
