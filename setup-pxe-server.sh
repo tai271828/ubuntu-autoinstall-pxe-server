@@ -67,7 +67,7 @@ then
 fi
 
 # enable provision of image locally
-if [ -n ${isp} ]
+if [ -n ${iso} ]
 then
     cp ${iso} ${WWW_DIR}/
 fi
