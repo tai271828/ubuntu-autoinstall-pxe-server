@@ -2,7 +2,10 @@
 WORKING_ROOT_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 NETBOOT_GRUB_CLI_ROOT_PATH="${WORKING_ROOT_PATH}/ubuntu-server-netboot"
 NETBOOT_GRUB_CLI="${NETBOOT_GRUB_CLI_ROOT_PATH}/ubuntu-server-netboot.py"
-TFTP_DIR="/srv/tftp"
+# focal
+#TFTP_DIR="/srv/tftp"
+# bionic
+TFTP_DIR="/var/lib/tftpboot"
 WWW_DIR="/var/www/html"
 
 
