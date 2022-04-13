@@ -60,14 +60,16 @@ temp_ubuntu_installer_dir=$( echo ${netboot_grub_cli_output} | awk -F"Netboot ge
 cp -r ${temp_ubuntu_installer_dir}/* ${TFTP_DIR}/
 
 # enable autoinstall
-if [ -n ${autoinstall_url} ]
+if [ -n "${autoinstall_url}" ]
 then
+    echo "Enabled: autoinstall ${autoinstall_url}"
     cp ${NETBOOT_GRUB_CLI_ROOT_PATH}/autoinstall/basic.yaml ${WWW_DIR}/user-data
     touch ${WWW_DIR}/meta-data
 fi
 
 # enable provision of image locally
-if [ -n ${iso} ]
+if [ -n "${iso}" ]
 then
+    echo "Enabled: iso cache for autoinstall ${iso}"
     cp ${iso} ${WWW_DIR}/
 fi
