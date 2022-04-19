@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 WORKING_ROOT_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 NETBOOT_GRUB_CLI_ROOT_PATH="${WORKING_ROOT_PATH}/ubuntu-server-netboot"
-NETBOOT_GRUB_CLI="${NETBOOT_GRUB_CLI_ROOT_PATH}/ubuntu-server-netboot.py"
+NETBOOT_GRUB_CLI="${NETBOOT_GRUB_CLI_ROOT_PATH}/ubuntu-server-netboot"
 # focal
 #TFTP_DIR="/srv/tftp"
 # bionic
