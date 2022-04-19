@@ -22,6 +22,8 @@ case $key in
     iso="$2"
     shift
     ;;
+    # TODO: interesting, I noticed --autoinstall will also work for usn.py of ubuntu-server-netboot
+    # is it because python argparse could input the optional argument partially?
     --autoinstall-url)
     autoinstall_url="$2"
     shift
