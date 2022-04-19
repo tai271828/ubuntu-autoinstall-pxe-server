@@ -48,6 +48,10 @@ if [ -n "$help" ]; then
     exit
 fi
 
+echo "===================================================================================="
+echo "NOTE! You may want to clean the files previously downloaded."
+echo 'sudo rm -rf /var/www/html/*.iso /var/lib/tftpboot/* ${HOME}/jammy-live-server-arm64'
+echo "===================================================================================="
 
 # try to cactch
 #     INFO: Netboot generation complete: /tmp/tmpo54145m2/ubuntu-installer
