@@ -22,7 +22,7 @@ case $key in
     iso="$2"
     shift
     ;;
-    --autoinstall_url)
+    --autoinstall-url)
     autoinstall_url="$2"
     shift
     ;;
