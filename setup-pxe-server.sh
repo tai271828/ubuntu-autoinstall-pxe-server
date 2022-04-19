@@ -55,6 +55,9 @@ echo "NOTE! You may want to clean the files previously downloaded."
 echo 'sudo rm -rf /var/www/html/*.iso /var/lib/tftpboot/* ${HOME}/jammy-live-server-arm64'
 echo "===================================================================================="
 
+echo "Make sure we are using the latest code base..."
+git submodule update --recursive --remote
+
 # try to cactch
 #     INFO: Netboot generation complete: /tmp/tmpo54145m2/ubuntu-installer
 # and extract /tmp/tmpo54145m2/ubuntu-installer to be
